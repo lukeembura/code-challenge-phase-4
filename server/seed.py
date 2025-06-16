@@ -15,7 +15,9 @@ def seed_database():
         restaurants = [
             Restaurant(name="Pizza Palace", address="123 Main St"),
             Restaurant(name="Slice of Heaven", address="456 Oak Ave"),
-            Restaurant(name="Pizza Paradise", address="789 Pine Rd")
+            Restaurant(name="Pizza Paradise", address="789 Pine Rd"),
+            Restaurant(name="Pizza Planet", address="101 Pine Rd"),
+            Restaurant(name="Pizza Place", address="105 New York Rd"),
         ]
         db.session.add_all(restaurants)
 
@@ -23,7 +25,9 @@ def seed_database():
         pizzas = [
             Pizza(name="Margherita", ingredients="Dough, Tomato Sauce, Mozzarella, Basil"),
             Pizza(name="Pepperoni", ingredients="Dough, Tomato Sauce, Mozzarella, Pepperoni"),
-            Pizza(name="Vegetarian", ingredients="Dough, Tomato Sauce, Mozzarella, Bell Peppers, Mushrooms, Onions")
+            Pizza(name="Vegetarian", ingredients="Dough, Tomato Sauce, Mozzarella, Bell Peppers, Mushrooms, Onions"),
+            Pizza(name="Cheese", ingredients="Dough, Tomato Sauce, Mozzarella, Cheese"),
+           
         ]
         db.session.add_all(pizzas)
 
